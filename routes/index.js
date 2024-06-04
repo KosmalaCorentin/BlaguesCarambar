@@ -12,8 +12,8 @@ router.get('/test', (req, res) => {
 });
 
 router.get('/random',controllerBlague.random );
-
-router.get('/blagues', controllerBlague.findAll);
-router.post('/blagues', controller.create);
+router.get('/blagues/all', controllerBlague.findAll);
+router.get('/blague/:id', controllerBlague.findByID);
+router.get('/blague', controllerBlague.random);
 
 module.exports = router;

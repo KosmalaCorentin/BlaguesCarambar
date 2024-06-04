@@ -20,6 +20,9 @@ const Blague = db.define(
     },
     
   },
+  {
+    tableName: 'Blagues',
+  }
 );
 
 module.exports = Blague;
